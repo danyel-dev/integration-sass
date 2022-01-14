@@ -7,7 +7,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Django|Sass</title>
+    <link rel="shortcut icon" href="{% static 'core/img/favicon.ico' %}" type="image/x-icon">
+    <title>Django | Sass</title>
 
     {% compress css %}
         <link rel="stylesheet" type="text/x-sass" href="{% static 'core/scss/home.scss' %}">
@@ -15,9 +16,16 @@
 </head>
 <body>
     <div id="container">
-        <div id="apresentation">
+        <div class="apresentation">
             <h1>Hello</h1>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit nisi ab quasi quod aperiam commodi itaque numquam adipisci neque, a accusantium eveniet laborum repudiandae accusamus, est incidunt. Maiores, sint similique.</p>
+
+            <p>Esta tela inicial simples está sendo estilizado utilizando um pré-processador CSS chamado <strong class="sass">Sass</strong>, que está sendo integrado juntamente com o framework Django. Se quiser saber mais sobre o assunto consulte os links abaixo.</p>
+
+            <div class="links">
+                <a href="https://klauslaube.com.br/2016/06/04/django-e-sass-com-django-compressor.html">Como integrar o Sass no Django</a>
+                <a href="https://www.djangoproject.com/">Documentação do Django</a>
+                <a href="https://sass-lang.com/">Documentação do Sass</a>
+            </div>
         </div>
     </div>  
 </body>
