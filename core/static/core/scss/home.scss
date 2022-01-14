@@ -15,7 +15,7 @@ body {
     justify-content: center;
     align-items: center;
 
-    .apresentation {
+    #apresentation {
         width: 400px;
         margin: 0 10px;
         padding: 15px;
@@ -30,7 +30,7 @@ body {
         border-radius: 3px;
         background-color: white;
 
-        .title-gradient {
+        h1 {
             font-family: sans-serif;
             
             background-image: linear-gradient(to right, rgb(226, 92, 159) 30%, rgb(57, 175, 130) 70%);
@@ -44,7 +44,7 @@ body {
             text-align: justify;
         }
 
-        .links {
+        #links {
             width: max-content;
         
             display: flex;
@@ -53,11 +53,11 @@ body {
             gap: .5em;
         }
 
-        .links a {
+        #links a {
             text-decoration: none;
         }
 
-        .links a:hover {
+        #links a:hover {
             text-decoration: underline;
         }
     }
