@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: whitesmoke;
+}
+
 #container {
     height: 100vh;
     
@@ -13,12 +17,18 @@
 
     .apresentation {
         width: 400px;
+        margin: 0 10px;
+        padding: 15px;
+
         text-align: center;
-        margin: 0 15px;
-        
         display: flex;
         flex-direction: column;
         gap: 1rem;
+        
+        border: 1px solid rgba(0, 0, 0, .1);
+        box-shadow: 1px 1px 4px 2px rgba(0, 0, 0, 0.1);
+        border-radius: 3px;
+        background-color: white;
 
         .title-gradient {
             font-family: sans-serif;
@@ -35,8 +45,11 @@
         }
 
         .links {
+            width: max-content;
+        
             display: flex;
             flex-direction: column;
+            margin: 0 auto;
             gap: .5em;
         }
 
