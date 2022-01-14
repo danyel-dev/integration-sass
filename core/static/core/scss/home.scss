@@ -20,17 +20,19 @@
         flex-direction: column;
         gap: 1rem;
 
-        h1 {
-            border-image: linear-gradient(227.91deg, red 0%, blue 100%) 1;
+        .title-gradient {
+            font-family: sans-serif;
+            
+            background-image: linear-gradient(to right, rgb(226, 92, 159) 30%, rgb(57, 175, 130) 70%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            color: black;
         }
 
         p {
             text-align: justify;
         }
-
-        // strong.sass {
-        //     color: #BF4080;
-        // }
 
         .links {
             display: flex;
